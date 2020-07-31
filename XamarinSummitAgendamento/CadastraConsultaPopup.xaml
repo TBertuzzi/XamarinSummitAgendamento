@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup" xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
+             x:Class="XamarinSummitAgendamento.CadastraConsultaPopup">
+   <!--<pages:PopupPage.Animation>
+    <animations:ScaleAnimation 
+      PositionIn="Center"
+      PositionOut="Center"
+      ScaleIn="1.2"
+      ScaleOut="0.8"
+      DurationIn="400"
+      DurationOut="300"
+      EasingIn="SinOut"
+      EasingOut="SinIn"
+      HasBackgroundAnimation="True"/>
+  </pages:PopupPage.Animation>
+  <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="20, 20, 20, 20">
+    <StackLayout BackgroundColor="White" Padding="0, 10, 0, 0">
+      <Label Text="First Popup Page" TextColor="Gray" FontSize="20" HorizontalOptions="Center"></Label>
+      <ScrollView>
+        <StackLayout>
+          <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Test Entry" 
+                   HorizontalOptions="FillAndExpand"
+                   BindingContext="{x:Reference Switch}" 
+                   IsEnabled="{Binding Path=IsToggled}" 
+                   PlaceholderColor="Silver" 
+                   Keyboard="Email"
+                   TextColor="Gray"></Entry>
+            <Switch IsToggled="True" x:Name="Switch"></Switch>
+          </StackLayout>
+          <ActivityIndicator Color="Gray" IsRunning="True"></ActivityIndicator>
+          <Slider Value="0.4" x:Name="Slider"></Slider>
+          <ProgressBar BindingContext="{x:Reference Slider}" Progress="{Binding Path=Value}"></ProgressBar>
+          <Button Text="Close" TextColor="#A9D1DE" Clicked="OnClose"></Button>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </StackLayout>-->
+
+  <pages:PopupPage.Animation>
+    <animations:ScaleAnimation
+      PositionIn="Bottom"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="700"
+      EasingIn="BounceOut"/>
+  </pages:PopupPage.Animation>
+    
+   <StackLayout
+             BackgroundColor="White"
+             IsClippedToBounds="True"
+            Padding="10, 5"
+            Margin="20"
+            Spacing="3">
+        
+       <Label Text="Nome" FontSize="Small" />
+       <Entry Placeholder="Digite seu Nome" />
+
+       <Label Text="CPF" FontSize="Small" />
+        <Entry  Placeholder="Digite o CPF" >
+            <Entry.Behaviors>
+                <behaviorPack:CPFValidationBehavior />
+                <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
+            </Entry.Behaviors>
+        </Entry>
+
+        <Label Text="CEP" FontSize="Small" />
+        <Entry  Placeholder="Enter CEP" >
+            <Entry.Behaviors>
+                <behaviorPack:CEPValidationBehavior />
+                <behaviorPack:MaskedBehavior Mask="XXXXX-XXX" />
+            </Entry.Behaviors>
+        </Entry>
+
+         
+       <Label Text="Exame" FontSize="Small" />
+       <Entry Placeholder="Digite seu Exame" />
+
+        <Button Text="Cadastrar" ></Button>
+        
+  </StackLayout>
+
+    
+    
+
+</pages:PopupPage>

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 
@@ -49,9 +50,11 @@ namespace XamarinSummitAgendamento
 
         }
 
-        void map_PinClicked(System.Object sender, Xamarin.Forms.GoogleMaps.PinClickedEventArgs e)
+        async void map_PinClicked(System.Object sender, Xamarin.Forms.GoogleMaps.PinClickedEventArgs e)
         {
-            var pinClicado = "teste";
+            var page = new CadastraConsultaPopup();
+
+            await PopupNavigation.Instance.PushAsync(page);
         }
     }
 }
