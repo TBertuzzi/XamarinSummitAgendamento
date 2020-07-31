@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.arch.lifecycle.runtime/1.1.1.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.arch.lifecycle.viewmodel/1.1.1.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.animated.vector.drawable/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.coordinaterlayout/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.design/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.media.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.transition/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.appcompat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.recyclerview/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xamarin.forms/4.7.0.1239/buildTransitive/MonoAndroid10" t="Include">
+      <e p="proguard.cfg" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="XamarinSummitAgendamento" t="IncludeRecursive">
+        <e p="AgendamentosPage.xaml" t="Include" />
+        <e p="AgendamentosPage.xaml.cs" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CadastraConsultaPopup.xaml" t="Include" />
+        <e p="CadastraConsultaPopup.xaml.cs" t="Include" />
+        <e p="Controles" t="Include">
+          <e p="AgendamentoNavigationPage.cs" t="Include" />
+        </e>
+        <e p="MainPage.xaml" t="Include" />
+        <e p="MainPage.xaml.cs" t="Include" />
+        <e p="MenuPage.xaml" t="Include" />
+        <e p="MenuPage.xaml.cs" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="AgendamentosPage.xaml.g.cs" t="Include" />
+              <e p="App.xaml.g.cs" t="Include" />
+              <e p="CadastraConsultaPopup.xaml.g.cs" t="Include" />
+              <e p="MainPage.xaml.g.cs" t="Include" />
+              <e p="MenuPage.xaml.g.cs" t="Include" />
+              <e p="XamarinSummitAgendamento.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="AgendamentosPageViewModel.cs" t="Include" />
+          <e p="MainPageViewModel.cs" t="Include" />
+          <e p="MenuPageViewModel.cs" t="Include" />
+          <e p="ViewModelBase.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include" />
+        <e p="XamarinSummitAgendamento.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="XamarinSummitAgendamento.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include" />
+          <e p="layout" t="Include">
+            <e p="Tabbar.xml" t="Include" />
+            <e p="Toolbar.xml" t="Include" />
+          </e>
+          <e p="mipmap-anydpi-v26" t="Include">
+            <e p="icon.xml" t="Include" />
+            <e p="icon_round.xml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="Resource.designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="colors.xml" t="Include" />
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+        <e p="XamarinSummitAgendamento.Android.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="XamarinSummitAgendamento.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Icon1024.png" t="Include" />
+            <e p="Icon120.png" t="Include" />
+            <e p="Icon152.png" t="Include" />
+            <e p="Icon167.png" t="Include" />
+            <e p="Icon180.png" t="Include" />
+            <e p="Icon20.png" t="Include" />
+            <e p="Icon29.png" t="Include" />
+            <e p="Icon40.png" t="Include" />
+            <e p="Icon58.png" t="Include" />
+            <e p="Icon60.png" t="Include" />
+            <e p="Icon76.png" t="Include" />
+            <e p="Icon80.png" t="Include" />
+            <e p="Icon87.png" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+        <e p="XamarinSummitAgendamento.iOS.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="XamarinSummitAgendamento.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_XamarinSummitAgendamento.2122087600.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/XamarinBuildDownload/GMps-3.5.0/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle" t="Include">
+      <e p="bubble_left.png" t="Include" />
+      <e p="bubble_left@2x.png" t="Include" />
+      <e p="bubble_left@3x.png" t="Include" />
+      <e p="bubble_right.png" t="Include" />
+      <e p="bubble_right@2x.png" t="Include" />
+      <e p="bubble_right@3x.png" t="Include" />
+      <e p="default_marker.png" t="Include" />
+      <e p="default_marker@2x.png" t="Include" />
+      <e p="default_marker@3x.png" t="Include" />
+      <e p="GMSCacheStorage.momd" t="Include">
+        <e p="Storage.mom" t="Include" />
+        <e p="StorageWithTileProto.mom" t="Include" />
+        <e p="StorageWithTileProto.omo" t="Include" />
+        <e p="StorageWithTileVersionID.mom" t="Include" />
+        <e p="VersionInfo.plist" t="Include" />
+      </e>
+      <e p="GMSCoreResources.bundle" t="Include">
+        <e p="ar.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="Assets.car" t="Include" />
+        <e p="button_background.png" t="Include" />
+        <e p="button_background@2x.png" t="Include" />
+        <e p="button_background@3x.png" t="Include" />
+        <e p="button_compass.png" t="Include" />
+        <e p="button_compass@2x.png" t="Include" />
+        <e p="button_compass_night.png" t="Include" />
+        <e p="button_compass_night@2x.png" t="Include" />
+        <e p="button_my_location.png" t="Include" />
+        <e p="button_my_location@2x.png" t="Include" />
+        <e p="ca.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="cs.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="da.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="dav_one_way_16_256.png" t="Include" />
+        <e p="de.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="DroidSansMerged-Regular.ttf" t="Include" />
+        <e p="el.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="en.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="en_AU.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="en_GB.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="en_IN.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="es.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="es_419.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="es_MX.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="fi.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="fr.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="fr_CA.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="GMSNavNightModeSprites-0-1x.png" t="Include" />
+        <e p="GMSNavNightModeSprites-0-2x.png" t="Include" />
+        <e p="GMSNavNightModeSprites-0-3x.png" t="Include" />
+        <e p="GMSNavSprites-0-1x.png" t="Include" />
+        <e p="GMSNavSprites-0-2x.png" t="Include" />
+        <e p="GMSNavSprites-0-3x.png" t="Include" />
+        <e p="GMSSprites-0-1x.png" t="Include" />
+        <e p="GMSSprites-0-2x.png" t="Include" />
+        <e p="GMSSprites-0-3x.png" t="Include" />
+        <e p="he.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="hi.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="hr.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="hu.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="ic_compass_needle.png" t="Include" />
+        <e p="ic_compass_needle@2x.png" t="Include" />
+        <e p="ic_compass_needle_large.png" t="Include" />
+        <e p="ic_compass_needle_large@2x.png" t="Include" />
+        <e p="ic_compass_needle_large@3x.png" t="Include" />
+        <e p="ic_location_off.png" t="Include" />
+        <e p="ic_location_off@2x.png" t="Include" />
+        <e p="ic_location_off@3x.png" t="Include" />
+        <e p="ic_qu_direction_mylocation.png" t="Include" />
+        <e p="ic_qu_direction_mylocation@2x.png" t="Include" />
+        <e p="ic_qu_direction_mylocation@3x.png" t="Include" />
+        <e p="id.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="Info.plist" t="Include" />
+        <e p="it.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="ja.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="ko.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="lt.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="lv.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="ms.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="nb.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="nl.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="pl.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="polyline_colors_texture.png" t="Include" />
+        <e p="polyline_colors_texture_dim.png" t="Include" />
+        <e p="pt.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="pt_BR.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="pt_PT.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="ro.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="road_1-1.png" t="Include" />
+        <e p="road_128-32.png" t="Include" />
+        <e p="road_16-4.png" t="Include" />
+        <e p="road_2-1.png" t="Include" />
+        <e p="road_256-64.png" t="Include" />
+        <e p="road_32-8.png" t="Include" />
+        <e p="road_4-1.png" t="Include" />
+        <e p="road_64-16.png" t="Include" />
+        <e p="road_8-2.png" t="Include" />
+        <e p="ru.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="sk.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="sv.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="th.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="Tharlon-Regular.ttf" t="Include" />
+        <e p="tr.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="uk.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="vi.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="zh_CN.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="zh_HK.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+        <e p="zh_TW.lproj" t="Include">
+          <e p="GMSCore.strings" t="Include" />
+        </e>
+      </e>
+      <e p="ic_error.png" t="Include" />
+      <e p="ic_error@2x.png" t="Include" />
+      <e p="ic_error@3x.png" t="Include" />
+      <e p="Info.plist" t="Include" />
+      <e p="oss_licenses_maps.txt.gz" t="Include" />
+    </e>
+    <e p="$USER_HOME$/Library/Developer/Xamarin/android-sdk-macosx/platforms/android-28/data/res" t="IncludeRecursive" />
+  </component>
+</project>

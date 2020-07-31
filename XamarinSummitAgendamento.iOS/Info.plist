@@ -38,5 +38,7 @@
 	<string>Este aplicativo usa sua localização para encontrar as farmácias e clínicas próximas a você.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Este aplicativo usa sua localização para encontrar as farmácias e clínicas próximas a você.</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
 </dict>
 </plist>

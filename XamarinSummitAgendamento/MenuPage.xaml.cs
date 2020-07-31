@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
+using XamarinSummitAgendamento.Controles;
 
 namespace XamarinSummitAgendamento
 {
@@ -10,10 +11,12 @@ namespace XamarinSummitAgendamento
         {
             InitializeComponent();
 
+            Xamarin.Forms.NavigationPage.SetHasNavigationBar(this, false);
+
             On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
 
-            Children.Add(new MainPage());
-            Children.Add(new AgendamentosPage());
+            Children.Add(new AgendamentoNavigationPage(new MainPage()));
+            Children.Add(new AgendamentoNavigationPage(new AgendamentosPage()));
         }
     }
 }

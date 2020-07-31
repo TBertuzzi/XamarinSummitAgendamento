@@ -5,6 +5,14 @@
              Title="Clinicas"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+
+             material:MaterialNavigationPage.AppBarColor="#2c3e50"
+             material:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
+             material:MaterialNavigationPage.AppBarTitleTextFontSize="14"
+             material:MaterialNavigationPage.StatusBarColor="#1B3147"
+
              mc:Ignorable="d" x:Class="XamarinSummitAgendamento.MainPage">
     <StackLayout>
             <maps:Map x:Name="map"
