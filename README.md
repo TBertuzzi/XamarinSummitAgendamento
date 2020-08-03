@@ -4,7 +4,7 @@ Aplicativo de Exemplo demonstrado em minha Talk no Xamarin.Summit 2020.
 
 FrameWork MVVM :
 
-https://medium.com/@bertuzzi/mvvm-em-a%C3%A7%C3%A3o-prism-library-configurando-o-prism-eb7c9b539a88
+[Prism](https://medium.com/@bertuzzi/mvvm-em-a%C3%A7%C3%A3o-prism-library-configurando-o-prism-eb7c9b539a88)
 
 Controles e Plugins Utilizados :
 
