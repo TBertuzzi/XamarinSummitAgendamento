@@ -27,8 +27,11 @@ namespace XamarinSummitAgendamento.iOS
             Rg.Plugins.Popup.Popup.Init();
 
             global::Xamarin.Forms.Forms.Init();
-            Xamarin.FormsGoogleMaps.Init("AIzaSyAyLcWqCC-B30whne7pKobNM8MrW_dUyKU");
+            Xamarin.FormsGoogleMaps.Init("");
             XF.Material.iOS.Material.Init();
+
+            Plugin.LocalNotification.NotificationCenter.AskPermission();
+
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options); 

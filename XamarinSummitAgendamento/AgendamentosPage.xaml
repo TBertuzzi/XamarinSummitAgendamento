@@ -64,7 +64,8 @@
             </CollectionView.EmptyView>
         </CollectionView>
 
-    <material:MaterialButton Text="Confirmar Exame" BorderWidth="1" TextColor="DarkGreen"></material:MaterialButton>
+    <material:MaterialButton Text="Confirmar Exame" BorderWidth="1" Command="{Binding ConfirmarCommand}" ></material:MaterialButton>
+    <material:MaterialButton Text="Lembrar do Exame" BorderWidth="1" Command="{Binding LembrarCommand}" ></material:MaterialButton>
 
         </StackLayout>
                </RefreshView>

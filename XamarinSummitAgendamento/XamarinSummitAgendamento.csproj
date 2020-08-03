@@ -20,6 +20,8 @@
     <PackageReference Include="Xamarin.Forms.BehaviorValidationPack" Version="1.1.0" />
     <PackageReference Include="XF.Material" Version="1.6.5" />
     <PackageReference Include="Xamarin.Plugin.Calendar" Version="1.2.1506" />
+    <PackageReference Include="Plugin.Fingerprint" Version="2.1.1" />
+    <PackageReference Include="Plugin.LocalNotification" Version="5.0.6" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />

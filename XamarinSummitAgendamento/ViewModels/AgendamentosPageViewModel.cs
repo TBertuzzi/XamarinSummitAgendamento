@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
+using Plugin.LocalNotification;
+using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
 using XamarinSummitAgendamento.Models;
@@ -11,6 +16,14 @@ namespace XamarinSummitAgendamento.ViewModels
     {
         private IAgendamentosService _agendamentosService;
         public ObservableCollection<Agendamento> Agendamentos { get; }
+
+        private DelegateCommand _confirmarCommand;
+        public DelegateCommand ConfirmarCommand => _confirmarCommand ?? (_confirmarCommand = new DelegateCommand(async () => await ConfirmarCommandExecute(), () => !IsBusy));
+
+        private DelegateCommand _lembrarCommand;
+        public DelegateCommand LembrarCommand => _lembrarCommand ?? (_lembrarCommand = new DelegateCommand( () => LembrarCommandExecute(), () => !IsBusy));
+
+
         protected AgendamentosPageViewModel(INavigationService navigationService,
              IPageDialogService pageDialogService, IAgendamentosService agendamentosService) : base(navigationService, pageDialogService)
         {
@@ -67,5 +80,34 @@ namespace XamarinSummitAgendamento.ViewModels
             }
 
         }
+
+        private async Task ConfirmarCommandExecute()
+        {
+            var request = new AuthenticationRequestConfiguration("Confirme seu Exame", "Apenas o proprietario pode confirmar os exames");
+            var result = await CrossFingerprint.Current.AuthenticateAsync(request);
+            if (result.Authenticated)
+            {
+                await PageDialogService.DisplayAlertAsync("Confirmado", "Exame confirmado", "OK");
+            }
+            else
+            {
+                await PageDialogService.DisplayAlertAsync("Nao Confirmado", "Apenas o proprietario pode confirmar os exames", "OK");
+            }
+        }
+
+        //Agenda um Exame para 10 Segundos
+        private void LembrarCommandExecute()
+        {
+            var notification = new NotificationRequest
+            {
+                NotificationId = 100,
+                Title = "Lembrete de Exame",
+                Description = "Seu Exame Começara em Breve",
+                ReturningData = "Exame Solicitado",
+                NotifyTime = DateTime.Now.AddSeconds(10)
+            };
+            NotificationCenter.Current.Show(notification);
+        }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Plugin.LocalNotification;
 using Prism;
 using Prism.Ioc;
 using Prism.Navigation;
@@ -22,6 +23,8 @@ namespace XamarinSummitAgendamento
         protected override async void OnInitialized()
         {
             InitializeComponent();
+
+            NotificationCenter.Current.NotificationTapped += OnLocalNotificationTapped;
 
             FakeDBAgendamento.Agendamentos = new List<Agendamento>();
 
@@ -46,6 +49,10 @@ namespace XamarinSummitAgendamento
 
         }
 
-     
+        private void OnLocalNotificationTapped(NotificationTappedEventArgs e)
+        {
+            // your code goes here
+        }
+
     }
 }
