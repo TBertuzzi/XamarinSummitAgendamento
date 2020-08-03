@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Plugin.LocalNotification;
 using Prism;
 using Prism.Ioc;
@@ -22,6 +23,10 @@ namespace XamarinSummitAgendamento
 
         protected override async void OnInitialized()
         {
+            CultureInfo brasilCulture = new CultureInfo("pt-BR");
+            CultureInfo.DefaultThreadCurrentCulture = brasilCulture;
+
+
             InitializeComponent();
 
             NotificationCenter.Current.NotificationTapped += OnLocalNotificationTapped;

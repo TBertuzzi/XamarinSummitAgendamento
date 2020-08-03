@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 using Foundation;
@@ -24,10 +25,14 @@ namespace XamarinSummitAgendamento.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            CultureInfo brasilCulture = new CultureInfo("pt-BR");
+            CultureInfo.DefaultThreadCurrentCulture = brasilCulture;
+
+
             Rg.Plugins.Popup.Popup.Init();
 
             global::Xamarin.Forms.Forms.Init();
-            Xamarin.FormsGoogleMaps.Init("");
+            Xamarin.FormsGoogleMaps.Init("Google maps api");
             XF.Material.iOS.Material.Init();
 
             Plugin.LocalNotification.NotificationCenter.AskPermission();
