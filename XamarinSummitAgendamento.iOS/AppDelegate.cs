@@ -27,7 +27,7 @@ namespace XamarinSummitAgendamento.iOS
             Rg.Plugins.Popup.Popup.Init();
 
             global::Xamarin.Forms.Forms.Init();
-            Xamarin.FormsGoogleMaps.Init("GOOGLE MAPS API CODE");
+            Xamarin.FormsGoogleMaps.Init("");
             XF.Material.iOS.Material.Init();
             LoadApplication(new App(new iOSInitializer()));
 

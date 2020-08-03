@@ -140,6 +140,9 @@
     <PackageReference Include="XF.Material">
       <Version>1.6.5</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Plugin.Calendar">
+      <Version>1.2.1506</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

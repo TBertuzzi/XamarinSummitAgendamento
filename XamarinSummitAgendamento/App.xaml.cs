@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using Prism;
 using Prism.Ioc;
 using Prism.Navigation;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinSummitAgendamento.Controles;
+using XamarinSummitAgendamento.Models;
+using XamarinSummitAgendamento.Repository;
+using XamarinSummitAgendamento.Services;
 using XamarinSummitAgendamento.ViewModels;
 
 namespace XamarinSummitAgendamento
@@ -18,6 +22,8 @@ namespace XamarinSummitAgendamento
         protected override async void OnInitialized()
         {
             InitializeComponent();
+
+            FakeDBAgendamento.Agendamentos = new List<Agendamento>();
 
             XF.Material.Forms.Material.Init(this, "Material.Configuration");
 
@@ -33,6 +39,11 @@ namespace XamarinSummitAgendamento
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<AgendamentosPage, AgendamentosPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
+            containerRegistry.RegisterForNavigation<AgendaPage, AgendaPageViewModel>();
+
+            //Mock Service
+            containerRegistry.RegisterSingleton<IAgendamentosService, AgendamentosService>();
+
         }
 
      

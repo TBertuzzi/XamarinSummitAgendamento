@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+
+             material:MaterialNavigationPage.AppBarColor="#2c3e50"
+             material:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
+             material:MaterialNavigationPage.AppBarTitleTextFontSize="14"
+             material:MaterialNavigationPage.StatusBarColor="#1B3147"
+
              Title="Agendamentos"
              x:Class="XamarinSummitAgendamento.AgendamentosPage">
     <ContentPage.Content>

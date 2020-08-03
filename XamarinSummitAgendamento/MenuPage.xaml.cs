@@ -17,6 +17,7 @@ namespace XamarinSummitAgendamento
 
             Children.Add(new AgendamentoNavigationPage(new MainPage()));
             Children.Add(new AgendamentoNavigationPage(new AgendamentosPage()));
+            Children.Add(new AgendamentoNavigationPage(new AgendaPage()));
         }
     }
 }

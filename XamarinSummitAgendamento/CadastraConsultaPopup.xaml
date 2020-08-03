@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
-             x:Class="XamarinSummitAgendamento.CadastraConsultaPopup">
+             x:Class="XamarinSummitAgendamento.CadastraConsultaPopup" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material">
  
 
   <pages:PopupPage.Animation>
@@ -24,10 +24,10 @@
             Margin="20,20,20,80"
             Spacing="3">
         
-       <Label Text="Nome" FontSize="Small" />
-       <Entry Placeholder="Digite seu Nome" />
+       <material:MaterialLabel Text="Exame" FontSize="Small" />
+       <material:MaterialTextField Placeholder="Digite o Exame" />
 
-       <Label Text="CPF" FontSize="Small" />
+       <material:MaterialLabel Text="CPF" FontSize="Small" />
         <Entry  Placeholder="Digite o CPF" >
             <Entry.Behaviors>
                 <behaviorPack:CPFValidationBehavior />
@@ -35,7 +35,7 @@
             </Entry.Behaviors>
         </Entry>
 
-        <Label Text="CEP" FontSize="Small" />
+        <material:MaterialLabel Text="CEP" FontSize="Small" />
         <Entry  Placeholder="Enter CEP" >
             <Entry.Behaviors>
                 <behaviorPack:CEPValidationBehavior />
@@ -43,13 +43,13 @@
             </Entry.Behaviors>
         </Entry>
 
-        <Label Text="Data e Hora" FontSize="Small" />
+        <material:MaterialLabel Text="Data e Hora" FontSize="Small" />
        <DatePicker></DatePicker>
          
-       <Label Text="Exame" FontSize="Small" />
-       <Entry Placeholder="Digite seu Exame" />
+       <material:MaterialLabel Text="Observacao" FontSize="Small" />
+       <material:MaterialTextField Placeholder="Observacao" />
 
-        <Button Text="Cadastrar" ></Button>
+        <material:MaterialButton Elevation="4"  Text="Cadastrar" ></material:MaterialButton>
         
   </StackLayout>
 

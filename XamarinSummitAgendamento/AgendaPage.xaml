@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Agenda"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
+             material:MaterialNavigationPage.AppBarColor="#2c3e50"
+             material:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
+             material:MaterialNavigationPage.AppBarTitleTextFontSize="14"
+             material:MaterialNavigationPage.StatusBarColor="#1B3147"
+
+             x:Class="XamarinSummitAgendamento.AgendaPage">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="daysTitleLabelStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="20" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <controls:Calendar
+        Padding="10,0"
+        AnimateCalendar="True"
+        DayViewCornerRadius="3"
+        DayViewSize="40"
+        DaysTitleColor="Orange"
+        DaysTitleHeight="40"
+        DaysTitleLabelStyle="{StaticResource daysTitleLabelStyle}"
+        DeselectedDayTextColor="Blue"
+        DisableSwipeDetection="False"
+        EventIndicatorColor="Red"
+        EventIndicatorSelectedColor="White"
+        Events="{Binding Events}"
+        HorizontalOptions="FillAndExpand"
+        MonthLabelColor="Red"
+        OtherMonthDayColor="Gray"
+        SelectedDateColor="Red"
+        SelectedDateTextFormat="ddd, dd MMM yyyy"
+        SelectedDayBackgroundColor="DarkCyan"
+        SelectedDayTextColor="Cyan"
+        SwipeToChangeMonthEnabled="False"
+        SwipeUpToHideEnabled="False"
+        TodayFillColor="Silver"
+        TodayOutlineColor="Blue"
+        VerticalOptions="FillAndExpand"
+        Culture="{Binding Culture}"
+        YearLabelColor="Blue">
+
+        <controls:Calendar.EventTemplate>
+            <DataTemplate>
+                <StackLayout
+                Padding="15,0,0,0">
+                    <Label
+                    Text="{Binding Exame}"
+                    FontAttributes="Bold"
+                    FontSize="Medium" />
+                    <Label
+                    Text="{Binding Observacao}"
+                    FontSize="Small"
+                    LineBreakMode="WordWrap" />
+                </StackLayout>
+            </DataTemplate>
+        </controls:Calendar.EventTemplate>
+    </controls:Calendar>
+
+    </ContentPage.Content>
+</ContentPage>
