@@ -12,5 +12,62 @@
              Title="Agendamentos"
              x:Class="XamarinSummitAgendamento.AgendamentosPage">
     <ContentPage.Content>
+
+          <RefreshView IsRefreshing="{Binding IsBusy}">
+<StackLayout>
+
+
+         <CollectionView x:Name="collectionView" ItemsSource="{Binding Agendamentos}" 
+                        SelectionMode="Single"
+                        VerticalOptions="FillAndExpand">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+
+                        <Grid Padding="20,30" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+
+                            <Label Grid.Row="0" 
+                                       Grid.Column="0"
+                                         FontSize="Medium"
+                                       Text="{Binding DataHora,StringFormat='{0:dd/MM/yyyy}'}"/>
+
+                            <Label Grid.Row="1" 
+                                       Grid.Column="0"
+                                       Text="{Binding Exame}"
+                                       FontSize="Large"
+                                       TextColor="#FF5525"/>
+
+
+                        </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+            <CollectionView.EmptyView>
+                <ContentView>
+                    <Label Text="Não tem itens para exibir"></Label>
+                </ContentView>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+    <material:MaterialButton Text="Confirmar Exame" BorderWidth="1" TextColor="DarkGreen"></material:MaterialButton>
+
+        </StackLayout>
+               </RefreshView>
+
     </ContentPage.Content>
 </ContentPage>

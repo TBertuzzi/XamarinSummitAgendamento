@@ -12,7 +12,6 @@ namespace XamarinSummitAgendamento.ViewModels
     public class AgendaPageViewModel : ViewModelBase
     {
         private IAgendamentosService _agendamentosService;
-        //public EventCollection Events { get; set; }
         private CultureInfo _culture = CultureInfo.InvariantCulture;
         public CultureInfo Culture
         {
