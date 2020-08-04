@@ -23,7 +23,6 @@ Controles e Plugins Utilizados :
  -- Implementar
  
  * Interface
- * Novo Controle de Behavior
  * Integração de Inserir x Exibir
 
 
