@@ -23,6 +23,7 @@
     <PackageReference Include="Plugin.Fingerprint" Version="2.1.1" />
     <PackageReference Include="Plugin.LocalNotification" Version="5.0.6" />
     <PackageReference Include="Xamarin.Forms.ConvertersPack" Version="1.0.0" />
+    <PackageReference Include="Xamarin.Forms.BehaviorValidationPack.XFMaterial" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />

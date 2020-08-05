@@ -4,7 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack"
-             x:Class="XamarinSummitAgendamento.CadastraConsultaPopup" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+                 x:Class="XamarinSummitAgendamento.CadastraConsultaPopup" xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+                  xmlns:behaviorPackMaterial="clr-namespace:Xamarin.Forms.BehaviorValidationPack.XFMaterial;assembly=Xamarin.Forms.BehaviorValidationPack.XFMaterial"
                  xmlns:converterPack="clr-namespace:Xamarin.Forms.ConvertersPack;assembly=Xamarin.Forms.ConvertersPack">
 
     <ContentPage.Resources>
@@ -34,20 +35,20 @@
        <material:MaterialTextField Placeholder="Digite o Exame" />
 
        <material:MaterialLabel Text="CPF" FontSize="Small" />
-        <Entry  Placeholder="Digite o CPF" >
-            <Entry.Behaviors>
-                <behaviorPack:CPFValidationBehavior />
-                <behaviorPack:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
-            </Entry.Behaviors>
-        </Entry>
+        <material:MaterialTextField  Placeholder="Digite o CPF" >
+            <material:MaterialTextField.Behaviors>
+                <behaviorPackMaterial:CPFValidationBehavior />
+                <behaviorPackMaterial:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
+            </material:MaterialTextField.Behaviors>
+        </material:MaterialTextField>
 
         <material:MaterialLabel Text="CEP" FontSize="Small" />
-        <Entry  Placeholder="Enter CEP" >
-            <Entry.Behaviors>
-                <behaviorPack:CEPValidationBehavior />
-                <behaviorPack:MaskedBehavior Mask="XXXXX-XXX" />
-            </Entry.Behaviors>
-        </Entry>
+        <material:MaterialTextField  Placeholder="Enter CEP" >
+            <material:MaterialTextField.Behaviors>
+                <behaviorPackMaterial:CEPValidationBehavior />
+                <behaviorPackMaterial:MaskedBehavior Mask="XXXXX-XXX" />
+            </material:MaterialTextField.Behaviors>
+        </material:MaterialTextField>
 
         <material:MaterialLabel Text="Data e Hora" FontSize="Small" />
        <DatePicker></DatePicker>
