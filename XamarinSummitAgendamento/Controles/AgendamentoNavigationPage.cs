@@ -7,7 +7,10 @@ namespace XamarinSummitAgendamento.Controles
     public class AgendamentoNavigationPage : MaterialNavigationPage
     {
         public AgendamentoNavigationPage(Page root) : base(root)
-        {            Title = root.Title;
+        {
+            Title = root.Title;
+            IconImageSource = root.IconImageSource;
+            
         }
 
 

@@ -164,5 +164,20 @@
     <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-Bold.ttf" />
+    <BundleResource Include="Resources\evento.png" />
+    <BundleResource Include="Resources\evento%402x.png" />
+    <BundleResource Include="Resources\evento%403x.png" />
+    <BundleResource Include="Resources\info%402x.png" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\info%403x.png" />
+    <BundleResource Include="Resources\programacao.png" />
+    <BundleResource Include="Resources\programacao%402x.png" />
+    <BundleResource Include="Resources\programacao%403x.png" />
+    <BundleResource Include="Resources\tab_feed.png" />
+    <BundleResource Include="Resources\tab_feed%402x.png" />
+    <BundleResource Include="Resources\tab_feed%403x.png" />
+    <BundleResource Include="Resources\tab_events.png" />
+    <BundleResource Include="Resources\tab_events%402x.png" />
+    <BundleResource Include="Resources\tab_events%403x.png" />
   </ItemGroup>
 </Project>

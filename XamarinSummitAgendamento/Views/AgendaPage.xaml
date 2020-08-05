@@ -8,7 +8,7 @@
              material:MaterialNavigationPage.AppBarTitleTextAlignment="Start"
              material:MaterialNavigationPage.AppBarTitleTextFontSize="14"
              material:MaterialNavigationPage.StatusBarColor="#1B3147"
-
+             IconImageSource="programacao"
              x:Class="XamarinSummitAgendamento.AgendaPage">
 
 
