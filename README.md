@@ -19,11 +19,6 @@ Controles e Plugins Utilizados :
 |Converters|[Medium](https://medium.com/@bertuzzi/o-x-do-xamarin-forms-mascara-de-moeda-currency-converters-em-a%C3%A7%C3%A3o-769d9f0dc208)|
 |Notificações Locais|[GitHub](https://github.com/thudugala/Plugin.LocalNotification)|
 
- 
- -- Implementar
- 
- * Interface
- * Integração de Inserir x Exibir
 
 
 
