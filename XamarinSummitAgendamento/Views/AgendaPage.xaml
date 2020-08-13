@@ -56,11 +56,11 @@
             <DataTemplate>
                 <StackLayout
                 Padding="15,0,0,0">
-                    <Label
+                     <material:MaterialLabel
                     Text="{Binding Exame}"
                     FontAttributes="Bold"
                     FontSize="Medium" />
-                    <Label
+                     <material:MaterialLabel
                     Text="{Binding Observacao}"
                     FontSize="Small"
                     LineBreakMode="WordWrap" />

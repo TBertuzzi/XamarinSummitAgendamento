@@ -12,9 +12,9 @@
              Title="Agendamentos"
              x:Class="XamarinSummitAgendamento.AgendamentosPage">
     <ContentPage.Content>
-
+        <StackLayout>
           <RefreshView IsRefreshing="{Binding IsBusy}">
-<StackLayout>
+
 
 
          <CollectionView x:Name="collectionView" ItemsSource="{Binding Agendamentos}" 
@@ -40,12 +40,12 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <Label Grid.Row="0" 
+                            <material:MaterialLabel Grid.Row="0" 
                                        Grid.Column="0"
                                          FontSize="Medium"
                                        Text="{Binding DataHora,StringFormat='{0:dd/MM/yyyy}'}"/>
 
-                            <Label Grid.Row="1" 
+                           <material:MaterialLabel Grid.Row="1" 
                                        Grid.Column="0"
                                        Text="{Binding Exame}"
                                        FontSize="Large"
@@ -64,11 +64,13 @@
             </CollectionView.EmptyView>
         </CollectionView>
 
+                </RefreshView>
+
     <material:MaterialButton Text="Confirmar Exame" BorderWidth="1" Command="{Binding ConfirmarCommand}" ></material:MaterialButton>
     <material:MaterialButton Text="Lembrar do Exame" BorderWidth="1" Command="{Binding LembrarCommand}" ></material:MaterialButton>
 
-        </StackLayout>
-               </RefreshView>
+            </StackLayout>
+             
 
     </ContentPage.Content>
 </ContentPage>

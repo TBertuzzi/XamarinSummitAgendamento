@@ -32,10 +32,10 @@
             Spacing="3">
         
        <material:MaterialLabel Text="Exame" FontSize="Small" />
-       <material:MaterialTextField Placeholder="Digite o Exame" />
+       <material:MaterialTextField AlwaysShowUnderline="True" BackgroundColor="White" IsAutoCapitalizationEnabled="True" Placeholder="Digite o Exame" />
 
        <material:MaterialLabel Text="CPF" FontSize="Small" />
-        <material:MaterialTextField  Placeholder="Digite o CPF" >
+        <material:MaterialTextField AlwaysShowUnderline="True" BackgroundColor="White"  Placeholder="Digite o CPF" >
             <material:MaterialTextField.Behaviors>
                 <behaviorPackMaterial:CPFValidationBehavior />
                 <behaviorPackMaterial:MaskedBehavior Mask="XXX.XXX.XXX-XX" />
@@ -43,7 +43,7 @@
         </material:MaterialTextField>
 
         <material:MaterialLabel Text="CEP" FontSize="Small" />
-        <material:MaterialTextField  Placeholder="Enter CEP" >
+        <material:MaterialTextField AlwaysShowUnderline="True" BackgroundColor="White" Placeholder="Enter CEP" >
             <material:MaterialTextField.Behaviors>
                 <behaviorPackMaterial:CEPValidationBehavior />
                 <behaviorPackMaterial:MaskedBehavior Mask="XXXXX-XXX" />
@@ -54,11 +54,11 @@
        <DatePicker></DatePicker>
 
         <material:MaterialLabel Text="Valor" FontSize="Small" />
-        <material:MaterialTextField Placeholder="Valor" 
+        <material:MaterialTextField AlwaysShowUnderline="True" BackgroundColor="White" Placeholder="Valor" 
               Text="{Binding Valor, Converter={StaticResource CurrencyConverter}}"></material:MaterialTextField >
          
        <material:MaterialLabel Text="Observacao" FontSize="Small" />
-       <material:MaterialTextField Placeholder="Observacao" />
+       <material:MaterialTextField AlwaysShowUnderline="True" BackgroundColor="White" IsAutoCapitalizationEnabled="true" IsTextAllCaps="True" Placeholder="Observacao" />
 
         <material:MaterialButton Elevation="4"  Text="Cadastrar" ></material:MaterialButton>
         
